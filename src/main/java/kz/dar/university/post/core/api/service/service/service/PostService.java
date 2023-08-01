@@ -8,7 +8,7 @@ public interface PostService {
     void createPost(PostModel postModel);
     List<PostModel> getAllPosts();
     PostModel getPostById(String postId);
-    void updatePostById(PostModel postModel, String postId);
+    void updatePostById(String postId, PostModel postModel);
     void deletePostById(String postId);
 
 

@@ -12,11 +12,6 @@ import java.util.List;
 @RequestMapping("/post")
 @RequiredArgsConstructor
 public class PostController {
-//    Метод createPost() для создания заказа посылки
-//    Метод getAllPosts() для вывода списка посылок
-//    Метод getPostById() для вывода данных о посылке по ID
-//    Метод updatePostById() для обновления данных о посылке по ID
-//    Метод deletePostById() для удаления данных о посылке по ID
 
     private final PostService postService;
     @GetMapping("/check")
@@ -39,7 +34,7 @@ public class PostController {
     public void updatePostById(@PathVariable String postId,
                                @RequestBody PostModel postModel) {
         postModel.setPostId(postId);
-        postService.updatePostById(postModel, postId);
+        postService.updatePostById(postId, postModel);
     }
     @DeleteMapping("/{postId}")
     public void deletePostById(@PathVariable String postId) {
