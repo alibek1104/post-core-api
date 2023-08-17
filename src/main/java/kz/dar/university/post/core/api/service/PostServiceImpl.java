@@ -1,4 +1,4 @@
-package kz.dar.university.post.core.api.service.service.service;
+package kz.dar.university.post.core.api.service;
 
 import kz.dar.university.post.core.api.model.PostModel;
 import org.springframework.stereotype.Service;
