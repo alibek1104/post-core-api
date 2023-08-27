@@ -30,10 +30,9 @@ public class PostServiceImpl implements PostService {
     }
 
     @Override
-    public void updatePostById(String postId, PostModel postModel) {
-        postId = postModel.getPostId();
-        if (postModelHashMap.containsKey(postId)) {
-            postModelHashMap.put(postModel.getPostItem(), postModel);
+    public void updatePostById(PostModel postModel) {
+        if (postModelHashMap.containsKey(postModel.getPostId())) {
+            createPost(postModel);
         }
     }
 

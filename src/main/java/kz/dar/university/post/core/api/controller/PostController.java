@@ -31,10 +31,8 @@ public class PostController {
         return postService.getPostById(postId);
     }
     @PutMapping("/{postId}")
-    public void updatePostById(@PathVariable String postId,
-                               @RequestBody PostModel postModel) {
-        postModel.setPostId(postId);
-        postService.updatePostById(postId, postModel);
+    public void updatePostById(@RequestBody PostModel postModel) {
+        postService.updatePostById(postModel);
     }
     @DeleteMapping("/{postId}")
     public void deletePostById(@PathVariable String postId) {
