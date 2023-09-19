@@ -1,7 +1,7 @@
 package kz.dar.university.post.core.api.controller;
 
 import kz.dar.university.post.core.api.model.PostModel;
-import kz.dar.university.post.core.api.service.PostService;
+import kz.dar.university.post.core.api.service.deprecated.PostService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

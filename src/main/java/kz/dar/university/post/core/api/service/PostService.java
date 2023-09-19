@@ -1,15 +1,14 @@
 package kz.dar.university.post.core.api.service;
 
-import kz.dar.university.post.core.api.model.PostModel;
+import kz.dar.university.post.core.api.model.PostRequest;
+import kz.dar.university.post.core.api.model.PostResponse;
+
 import java.util.List;
 
 public interface PostService {
-
-    void createPost(PostModel postModel);
-    List<PostModel> getAllPosts();
-    PostModel getPostById(String postId);
-    void updatePostById(PostModel postModel);
+    PostResponse createPost(PostRequest PostRequest);
+    PostResponse updatePostById(PostRequest PostRequest);
+    PostResponse getPostById(String postId);
+    List<PostResponse> getAllPosts();
     void deletePostById(String postId);
-
-
 }
