@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Deprecated
-@Service
+//@Service
 public class PostServiceImpl implements PostService {
 
     HashMap<String, PostModel> postModelHashMap = new HashMap<>();
